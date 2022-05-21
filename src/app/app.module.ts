@@ -7,7 +7,9 @@ import { HomeComponent } from './modules/home/home/home.component';
 import { CalendarioComponent } from './modules/calendario/calendario/calendario.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
+import { FlatpickrModule } from 'angularx-flatpickr';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HttpClientModule,
     CommonModule,
     FormsModule,
-    NgbModule,
+    NgbModalModule,
+    FlatpickrModule.forRoot(),
     
   ],
   providers: [],

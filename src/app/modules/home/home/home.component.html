@@ -1,0 +1,12 @@
+<script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+<p>home works!</p>
+<ul>
+    <li *ngFor="let item of listaAlumnos">
+        {{item.nombre}}
+    </li>
+</ul>
+<script>
+    // Initialize Parse
+      Parse.initialize("I6GMlwVoUxLutcTMNy2yyQ8mYivrvyR8m6S1B0mA", "xaaa7U2xAy49ZHciIU4m7V27jJgSW3ndCfvzswjT"); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
+      Parse.serverURL = "https://parseapi.back4app.com/";
+</script>
