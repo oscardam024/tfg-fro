@@ -9,7 +9,7 @@ import { Alumno } from '../models/alumno.model';
   providedIn: 'root'
 })
 export class AlumnoService {
-  urlApi="http://localhost:8080/alumnos"
+  urlApi="https://tfgdam024-app.herokuapp.com/alumnos"
 
   constructor(private readonly http: HttpClient) {  }
   
