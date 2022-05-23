@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">TALLER-JESUITAS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="">Inicio </a>
+            <a class="nav-item nav-link" href="alumnos">Alumnos</a>
+            <a class="nav-item nav-link active" href="profesores">Profesores<span class="sr-only">(Actual)</span></a>
+            <a class="nav-item nav-link" href="inventario">Inventario</a>
+            <a class="nav-item nav-link" href="prestamos">Préstamos</a>
+            <a class="nav-item nav-link" href="incidencias">Incidencias</a>
+        </div>
+    </div>
+</nav>
+<p>addprofe works!</p>
+<form #profePost="ngForm" (ngSubmit)="onSubmit(profesor)">
+    <label>Nombre</label>
+    <input [(ngModel)]="profesor.nombre" [ngModelOptions]="{standalone: true}" type="text" size="10" class="form-control" id="Nombre">
+
+    <label>Apellidos</label>
+    <input [(ngModel)]="profesor.apellido" [ngModelOptions]="{standalone: true}" type="text" size="10" class="form-control" id="Nombre">
+
+    <label>DNI</label>
+    <input placeholder="dni" [(ngModel)]="profesor.dni" [ngModelOptions]="{standalone: true}" type="text" size="10" class="form-control" id="Nombre">
+
+
+    <label>Teléfono</label>
+    <input placeholder="666666666" [(ngModel)]="profesor.numeroTelefono" [ngModelOptions]="{standalone: true}" type="text" size="10" class="form-control" id="Nombre">
+
+
+    <label>correo</label>
+    <input placeholder="correo@gmail.com" [(ngModel)]="profesor.correo"[ngModelOptions]="{standalone: true}" type="text" size="10" class="form-control" id="Nombre">
+
+    <label>Dirección</label>
+    <input placeholder="micasa" [(ngModel)]="profesor.direccion" type="text" [ngModelOptions]="{standalone: true}" size="10" class="form-control" id="Nombre">
+
+    <br>
+
+
+    <button type="submit" class="btn btn-primary">Añadir</button>
+</form>

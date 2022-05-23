@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">TALLER-JESUITAS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="">Inicio </a>
+        <a class="nav-item nav-link" href="calendario">Calendario</a>
+        <a class="nav-item nav-link" href="alumnos">Alumnos</a>
+        <a class="nav-item nav-link active" href="profesores">Profesores<span class="sr-only">(Actual)</span></a>
+        <a class="nav-item nav-link" href="inventario">Inventario</a>
+        <a class="nav-item nav-link" href="prestamos">Préstamos</a>
+        <a class="nav-item nav-link" href="incidencias">Incidencias</a>
+      </div>
+    </div>
+</nav>
+<p>profesores works!</p> <button type="button" (click)="addprofe()" class="btn btn-success">Añadir Profesor</button>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">nombre</th>
+        <th scope="col">apellido</th>
+        <th scope="col">dni</th>
+        <th scope="col">numeroTelefono</th>
+        <th scope="col">correo</th>
+        <th scope="col">direccion</th>
+        <th scope="col">acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let profesor of listaProfesores">
+        <td>{{profesor.nombre}}</td>
+        <td>{{profesor.apellido}}</td>
+        <td>{{profesor.dni}}</td>
+        <td>{{profesor.numeroTelefono}}</td>
+        <td>{{profesor.correo}}</td>
+        <td>{{profesor.direccion}}</td>
+        <td><button type="button" class="btn btn-danger"(click)="deletePofesor(profesor.idProfesor)">Borrar</button> - <button type="button" class="btn btn-warning">Editar</button></td>
+      </tr>
+       </tbody>
+  </table>

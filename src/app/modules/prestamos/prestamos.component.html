@@ -1,4 +1,3 @@
-<script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">TALLER-JESUITAS</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -6,23 +5,13 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="">Inicio <span class="sr-only">(Actual)</span></a>
+        <a class="nav-item nav-link" href="">Inicio </a>
         <a class="nav-item nav-link" href="alumnos">Alumnos</a>
         <a class="nav-item nav-link" href="profesores">Profesores</a>
         <a class="nav-item nav-link" href="inventario">Inventario</a>
-        <a class="nav-item nav-link" href="prestamos">Préstamos</a>
+        <a class="nav-item nav-link active" href="prestamos">Préstamos<span class="sr-only">(Actual)</span></a>
         <a class="nav-item nav-link" href="incidencias">Incidencias</a>
       </div>
     </div>
-  </nav>
-<p>home works!</p>
-<ul>
-    <li *ngFor="let item of listaAlumnos">
-        {{item.nombre}}
-    </li>
-</ul>
-<script>
-    // Initialize Parse
-      Parse.initialize("I6GMlwVoUxLutcTMNy2yyQ8mYivrvyR8m6S1B0mA", "xaaa7U2xAy49ZHciIU4m7V27jJgSW3ndCfvzswjT"); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
-      Parse.serverURL = "https://parseapi.back4app.com/";
-</script>
+</nav>
+<p>prestamos works!</p>

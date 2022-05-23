@@ -1,3 +1,4 @@
+
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { catchError, Observable } from 'rxjs';
@@ -15,6 +16,10 @@ export class AlumnoService {
   
   getAlumnos(){
     return this.http.get<Array<Alumno>>(this.urlApi);
+  }
+  deleteAlumno(id: string): Observable<{}>{
+    this.urlApi = `${this.urlApi}/${id}`;
+    return this.http.delete(this.urlApi);
   }
   
   }

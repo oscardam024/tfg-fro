@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Alumno } from 'src/app/models/alumno.model';
 import { AlumnoService } from 'src/app/services/alumno.service';
 
@@ -10,15 +11,15 @@ import { AlumnoService } from 'src/app/services/alumno.service';
 
 export class HomeComponent implements OnInit {
   listaAlumnos: Array<Alumno> = [];
-  constructor(private readonly alumnoService: AlumnoService) {
+  constructor(private readonly alumnoService: AlumnoService
+   ) {
     
    }
 
   ngOnInit(): void {
-    this.alumnoService.getAlumnos().subscribe((result)=>{
-      this.listaAlumnos = result;
-    })
+    
     
   }
+  
 
 }
