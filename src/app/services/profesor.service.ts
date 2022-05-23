@@ -7,7 +7,7 @@ import { Profesor } from '../models/profesor.model';
   providedIn: 'root'
 })
 export class ProfesorService {
-  urlApi="hhttps://tfgdam024-app.herokuapp.com/profesores"
+  urlApi="https://tfgdam024-app.herokuapp.com/profesores"
   constructor(private readonly http: HttpClient) { }
   getProfesores(){
     return this.http.get<Array<Profesor>>(this.urlApi);

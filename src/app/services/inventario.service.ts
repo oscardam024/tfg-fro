@@ -8,7 +8,7 @@ import { Inventario } from '../models/inventario.model';
   providedIn: 'root'
 })
 export class InventarioService {
-  urlApi="http://localhost:8080/inventario"
+  urlApi="https://tfgdam024-app.herokuapp.com/inventario"
   constructor(private readonly http: HttpClient) {
 
     
