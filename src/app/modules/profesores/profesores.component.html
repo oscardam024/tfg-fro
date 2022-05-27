@@ -7,7 +7,7 @@
       <div class="navbar-nav">
         <a class="nav-item nav-link" href="">Inicio </a>
         <a class="nav-item nav-link" href="alumnos">Alumnos</a>
-        <a class="nav-item nav-link active" href="profesores">Profesores<span class="sr-only">(Actual)</span></a>
+        <a class="nav-item nav-link active" href="profesores">Profesores<span class="sr-only"></span></a>
         <a class="nav-item nav-link" href="inventario">Inventario</a>
         <a class="nav-item nav-link" href="prestamos">Préstamos</a>
         <a class="nav-item nav-link" href="incidencias">Incidencias</a>
@@ -35,7 +35,7 @@
         <td>{{profesor.numeroTelefono}}</td>
         <td>{{profesor.correo}}</td>
         <td>{{profesor.direccion}}</td>
-        <td><button type="button" class="btn btn-danger"(click)="deletePofesor(profesor.idProfesor)">Borrar</button> - <button type="button" class="btn btn-warning">Editar</button></td>
+        <td><button type="button" class="btn btn-danger"(click)="deletePofesor(profesor.idProfesor)">Borrar</button> - <button type="button" (click)="editarProfe(profesor.idProfesor)" class="btn btn-warning">Editar</button></td>
       </tr>
        </tbody>
   </table>

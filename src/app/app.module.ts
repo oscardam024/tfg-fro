@@ -17,6 +17,8 @@ import { AlumnosComponent } from './modules/alumnos/alumnos.component';
 import { ProfesoresComponent } from './modules/profesores/profesores.component';
 import { ClasesComponent } from './modules/clases/clases.component';
 import { AddprofeComponent } from './modules/addprofe/addprofe.component';
+import { ModprofeComponent } from './modules/modprofe/modprofe.component';
+
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { AddprofeComponent } from './modules/addprofe/addprofe.component';
     ProfesoresComponent,
     ClasesComponent,
     AddprofeComponent,
+    ModprofeComponent,
+    
     
     
   ],

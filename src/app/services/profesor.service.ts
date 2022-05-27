@@ -19,4 +19,12 @@ export class ProfesorService {
   addProfesor(profesor: Profesor):Observable<Profesor>{
     return this.http.post<Profesor>(this.urlApi, profesor);
   }
+  modProfesor(profesor: Profesor):Observable<{}>{
+    this.urlApi="https://tfgdam024-app.herokuapp.com/profesores";
+    return this.http.put(this.urlApi, profesor)
+  }
+  getProfesorById(id: string){
+    this.urlApi = `${this.urlApi}/${id}`;
+    return this.http.get<Profesor>(this.urlApi)
+  }
 }

@@ -5,6 +5,7 @@ import { AlumnosComponent } from './modules/alumnos/alumnos.component';
 import { HomeComponent } from './modules/home/home/home.component';
 import { IncidenciasComponent } from './modules/incidencias/incidencias.component';
 import { InventarioComponent } from './modules/inventario/inventario.component';
+import { ModprofeComponent } from './modules/modprofe/modprofe.component';
 import { PrestamosComponent } from './modules/prestamos/prestamos.component';
 import { ProfesoresComponent } from './modules/profesores/profesores.component';
 
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'prestamos', component: PrestamosComponent},
   { path: 'incidencias', component: IncidenciasComponent},
   { path: 'addprofesores', component: AddprofeComponent},
+  { path: 'modProfesores/:id', component: ModprofeComponent}
 ];
 
 @NgModule({

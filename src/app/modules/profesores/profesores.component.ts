@@ -6,7 +6,8 @@ import { ProfesorService } from 'src/app/services/profesor.service';
 @Component({
   selector: 'app-profesores',
   templateUrl: './profesores.component.html',
-  styleUrls: ['./profesores.component.css']
+  styleUrls: ['./profesores.component.css'],
+  
 })
 export class ProfesoresComponent implements OnInit {
   listaProfesores: Array<Profesor>=[];
@@ -26,5 +27,8 @@ export class ProfesoresComponent implements OnInit {
   }
   addprofe(){
     this.router.navigate(['/addprofesores']);
+  }
+  editarProfe(id: string){
+    this.router.navigate(['/modProfesores/', id])
   }
 }
